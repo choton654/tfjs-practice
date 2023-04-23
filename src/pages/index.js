@@ -1,4 +1,4 @@
-
+'use client';
 import * as tf from '@tensorflow/tfjs';
 import { useEffect, useRef, useState } from 'react';
 const circle = "/circle.png";
