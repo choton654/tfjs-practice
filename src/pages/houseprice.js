@@ -101,7 +101,7 @@ function HousePrice() {
   const evaluate = () => {
     // Predict answer for a sinle piece of data
     tf.tidy(() => {
-      let newInput = normalize(tf.tensor2d([[750, 2]]), FEATURE_RESULTS.MIN_VALUES, FEATURE_RESULTS.MAX_VALUES)
+      let newInput = normalize(tf.tensor2d([[750, 1]]), FEATURE_RESULTS.MIN_VALUES, FEATURE_RESULTS.MAX_VALUES)
 
       let output = model.predict(newInput.NORMALIZED_VALUES)
       console.log('Prediction value---');
