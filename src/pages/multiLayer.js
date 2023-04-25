@@ -1,12 +1,8 @@
 
+'use client';
 
-import React, { useEffect } from "react";
+import React from "react";
 import * as tf from "@tensorflow/tfjs";
-// import { TRAINING_DATA } from "https://storage.googleapis.com/jmstore/TensorFlowJS/EdX/TrainingData/real-estate-data.js";
-
-
-
-
 
 function MultiLayer() {
     const LEARNING_RATE = 0.0001 // choose learning rate suitable for data
@@ -141,7 +137,7 @@ function MultiLayer() {
 
 
 
-    return <h1>TensorFlow.js Linear Regression using single nuron</h1>;
+    return <h1>TensorFlow.js Linear Regression using multi layer nuron</h1>;
 }
 
 export default MultiLayer;
