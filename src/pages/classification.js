@@ -1,4 +1,7 @@
 import React, { useEffect, useMemo, useRef, useState } from 'react'
+import '@tensorflow/tfjs-core'
+import '@tensorflow/tfjs-converter'
+import '@tensorflow/tfjs-backend-webgl'
 import Script from 'next/script'
 import style from '@/styles/style.module.css'
 import * as tf from "@tensorflow/tfjs";
