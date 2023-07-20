@@ -20,7 +20,7 @@ posenet.load().then((net) => {
     const poses = await net.estimateMultiplePoses(image);
     console.log('---poses---',poses);
     poses.forEach((pose) => {
-      drawKeypoints(pose.keypoints, 0.5);
+      drawKeypoints(pose.keypoints, 0.8);
     });
   
     image.dispose();
@@ -34,6 +34,7 @@ function drawKeypoints(keypoints, minConfidence) {
         const { y, x, } = keypoint.position;
 
         if (keypoint.score >= minConfidence) {
+            console.log('---draw---');
             canvasContext.beginPath();
             canvasContext.arc(x, y, 3, 0, 2 * Math.PI);
             // canvasContext.fillRect(x, y, 5, 5);
